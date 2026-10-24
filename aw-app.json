@@ -2,8 +2,8 @@
   "manifest_version": 1,
   "id": "neo4j",
   "name": "Neo4j Graph Database",
-  "version": "0.1.0",
-  "description": "A dedicated Neo4j graph database your other apps can share. Install it once and any app that declares it as a dependency gets a durable graph store on the workspace's own network — no setup beyond a password.",
+  "version": "0.2.0",
+  "description": "A dedicated Neo4j graph database your other apps can share. Install it once and any app that declares it as a dependency gets a durable graph store on the workspace's own network \u2014 no setup beyond a password.",
   "icon": "share-2",
   "tier": "container",
   "publisher": "TekFlox",
@@ -37,7 +37,7 @@
         "source": "$AW_APP_DATA/logs",
         "target": "/logs",
         "mode": "rw",
-        "reason": "debug.log etc. — keeps the writable layer clean and the logs inspectable from the host tree."
+        "reason": "debug.log etc. \u2014 keeps the writable layer clean and the logs inspectable from the host tree."
       }
     ]
   },
@@ -53,7 +53,7 @@
         "default": "",
         "x-secret": true,
         "title": "NEO4J_AUTH (user/password)",
-        "description": "The full 'neo4j/<password>' pair, set once at install. Consumers carry the password half in their own config. Left empty, the container boots with Neo4j's locked default credential and no consumer can connect — set it before first start."
+        "description": "The full 'neo4j/<password>' pair, set once at install. Consumers carry the password half in their own config. Left empty, the container boots with Neo4j's locked default credential and no consumer can connect \u2014 set it before first start."
       },
       "auto_start": {
         "type": "boolean",
